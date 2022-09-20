@@ -1,4 +1,8 @@
 class Api::V1::MarkdownFilesController < ApplicationController
+  def index
+    render json: MarkdownFile.all
+  end
+
   # GET /markdown_files/1
   def show
     render json: MarkdownFile.find(params[:id])
