@@ -1,4 +1,6 @@
 class Api::V1::MarkdownFilesController < ApplicationController
+  before_action :set_markdown_file, only: %i[show update destroy]
+
   def index
     render json: MarkdownFile.all
   end
@@ -38,5 +40,9 @@ class Api::V1::MarkdownFilesController < ApplicationController
   # Only allow a trusted parameter "white list" through.
   def markdown_file_params
     params.require(:markdown_file).permit(:name, :content)
+  end
+
+  def set_markdown_file
+    @markdown_file = MarkdownFile.find(params[:id])
   end
 end
