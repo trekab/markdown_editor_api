@@ -23,6 +23,12 @@ class Api::V1::MarkdownFilesController < ApplicationController
     end
   end
 
+  # DELETE /markdown_files/1
+  def destroy
+    @markdown_file.destroy
+    head 204
+  end
+
   private
 
   # Only allow a trusted parameter "white list" through.
