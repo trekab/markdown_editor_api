@@ -48,3 +48,5 @@ end
 
 
 gem "redcarpet", "~> 3.5"
+
+gem "jsonapi-serializer", "~> 2.2"
