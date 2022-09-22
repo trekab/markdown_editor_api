@@ -1,24 +1,56 @@
-# README
+# Markdown Editor API
+> This is an API for an `In-browser Markdown Editor` client that is aimed at enabling users to manage or conviniently edit their mardown files.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![screenshot](./markdown_api_docs.png)
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
 
-* System dependencies
+## Documentation
 
-* Configuration
+[Documentation Link](http://trekab.io/markdown_editor_api_docs/)
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+To get a local copy up and running follow these simple example steps.
 
-* Services (job queues, cache servers, search engines, etc.)
+- `git clone git@github.com:trekab/markdown_editor_api.git`
 
-* Deployment instructions
+Then you browse to the folder and exucute the following commands
 
-* ...
+- `cd markdown_editor_api`
+- run `bundle install`
+- run `docker compose run web rake db:create`
+- run `docker compose run web rake db:migrate`
+- run `docker compose up` and test out the `endpoints` from your preferred client.
+
+`N.B:` _Ensure that you have [docker setup](https://docs.docker.com/get-docker/) for your environment to run the app locally!_
+
+## Authors
+
+👤 **Treasure Kabareebe**
+
+- Github: [@trekab](https://github.com/trekab)
+- Twitter: [@t_kabareebe](https://twitter.com/t_kabareebe)
+- Linkedin: [Treasure Kabareebe](https://www.linkedin.com/in/treasure-kabareebe/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [Docker QuickStart Guide](https://docs.docker.com/samples/rails/)
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
