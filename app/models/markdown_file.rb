@@ -1,6 +1,7 @@
 class MarkdownFile < ApplicationRecord
   after_validation :html_attribute
   validates :name, uniqueness: true
+  validates_format_of :name, with: /\w+\.md/
   validates :content, presence: true
 
   def html_attribute
